@@ -80,3 +80,8 @@ if system_font:
     plt.show()
 else:
     print("Could not find a Devanagari font on your system.")
+
+Regional Language Word Cloud (Practical):
+This program creates a Hindi/Devanagari word cloud from regional text data.
+It cleans text using regex, removes Hindi stopwords, and uses a system font that supports Devanagari characters.
+The practical demonstrates multilingual text preprocessing and visualization.

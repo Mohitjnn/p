@@ -16,3 +16,8 @@ df["Comment"] = df["Comment"].apply(lambda x: re.sub(r'[^\w\s]', '', x))
 df["Comment"] = df["Comment"].str.strip()
 
 print(df)
+
+Marathi Text Cleaning (Practical):
+This program preprocesses comment data by removing null values and unwanted symbols.
+It converts text to lowercase, strips special characters, and removes extra spaces.
+The practical prepares raw Marathi comments into cleaner text for NLP tasks.

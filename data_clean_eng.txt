@@ -9,3 +9,8 @@ df = df.dropna()                   # remove invalid age rows
 df["Name"] = df["Name"].str.lower()
 
 print(df)
+
+English Data Cleaning (Practical):
+This program cleans tabular English data using pandas.
+It removes duplicate rows, handles missing values, converts age to numeric format, and standardizes names to lowercase.
+The practical demonstrates core preprocessing steps before analysis or machine learning.

@@ -76,3 +76,8 @@ print("Result:", result)
 # print("Avg:", avg)
 # print("Variation:", variation)
 # print("Result:", result)
+
+Bot Detection (Practical):
+This program sends repeated requests to a website and records response times.
+It compares request behavior such as speed and delay pattern to label activity as bot or human.
+The practical shows how traffic timing can be used for simple bot detection.

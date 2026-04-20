@@ -11,3 +11,8 @@ for s, bg in [("Positive","white"), ("Negative","black")]:
     text = " ".join(df[df['sentiment']==s]['comment'])
     wc = WordCloud(width=800, height=400, background_color=bg).generate(text)
     plt.imshow(wc); plt.title(f"{s} Sentiment"); plt.axis("off"); plt.show()
+
+Sentiment Word Cloud (Practical):
+This program performs sentiment labeling with TextBlob and splits comments into positive and negative groups.
+It generates separate word clouds for each sentiment to highlight frequent terms visually.
+The practical helps interpret user opinion patterns from text data.

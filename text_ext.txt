@@ -11,3 +11,9 @@ books = soup.find_all("h3")
 
 for b in books:
     print(b.text)
+
+Text Extraction (Practical):
+This program performs basic web scraping and text extraction using Python.
+It sends a request to the website and parses the HTML content with BeautifulSoup.
+Then it extracts all book title elements (`h3`) and prints the title text.
+This practical demonstrates how to collect useful text data from web pages for analysis.

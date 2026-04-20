@@ -10,6 +10,11 @@ grouped.plot(kind="bar")
 plt.title("Social Media Engagement")
 plt.show()
 
+Data Visualization (Practical):
+This program analyzes social media engagement using pandas and matplotlib.
+It first shows a bar chart for likes, shares, and comments by platform.
+Then it displays a pie chart to show each platform's contribution to total engagement.
+
 # total engagement split by platform
 platform_totals = grouped.sum(axis=1)
 
