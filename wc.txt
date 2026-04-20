@@ -1,0 +1,13 @@
+import pandas as pd
+from textblob import TextBlob
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("a.csv")
+
+df['sentiment'] = df['comment'].apply(lambda x: "Positive" if TextBlob(str(x)).sentiment.polarity > 0 else "Negative")
+
+for s, bg in [("Positive","white"), ("Negative","black")]:
+    text = " ".join(df[df['sentiment']==s]['comment'])
+    wc = WordCloud(width=800, height=400, background_color=bg).generate(text)
+    plt.imshow(wc); plt.title(f"{s} Sentiment"); plt.axis("off"); plt.show()

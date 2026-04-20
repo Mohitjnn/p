@@ -1,0 +1,18 @@
+import pandas as pd
+import re
+
+df = pd.read_csv("comments.csv")
+
+# remove missing/null
+df = df.dropna()
+
+# lowercase
+df["Comment"] = df["Comment"].str.lower()
+
+# remove emojis & special characters
+df["Comment"] = df["Comment"].apply(lambda x: re.sub(r'[^\w\s]', '', x))
+
+# remove extra spaces
+df["Comment"] = df["Comment"].str.strip()
+
+print(df)

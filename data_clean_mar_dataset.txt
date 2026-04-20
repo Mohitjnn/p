@@ -1,0 +1,8 @@
+Name,Comment
+Aadish,This product is good 👍
+Riya,बहुत अच्छा है
+Rahul,Not bad!!!
+Sneha,   Excellent service   
+Amit,yeh bahut accha hai
+Priya,👍👍 Loved it
+Karan,NULL

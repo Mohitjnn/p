@@ -1,0 +1,13 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = "http://books.toscrape.com"
+
+res = requests.get(url)
+soup = BeautifulSoup(res.text, "html.parser")
+
+# extract book titles
+books = soup.find_all("h3")
+
+for b in books:
+    print(b.text)

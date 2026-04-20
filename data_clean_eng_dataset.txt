@@ -1,0 +1,9 @@
+Name,Age,City
+Aadish,21,Mumbai
+Riya,22,Delhi
+Rahul,,Mumbai
+Sneha,23,
+Aadish,21,Mumbai
+AMIT,24,Pune
+Priya,twenty,Delhi
+Karan,25,Mumbai

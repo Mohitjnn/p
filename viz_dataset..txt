@@ -1,0 +1,11 @@
+User,Platform,Likes,Shares,Comments
+Aadish,Instagram,120,30,15
+Riya,Twitter,80,20,10
+Rahul,Facebook,200,50,25
+Sneha,Instagram,150,40,20
+Amit,Twitter,60,10,5
+Priya,Facebook,220,60,30
+Karan,Instagram,130,35,18
+Neha,Twitter,90,25,12
+Arjun,Facebook,180,45,22
+Meera,Instagram,160,42,19

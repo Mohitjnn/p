@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("social.csv")
+
+# total engagement per platform
+grouped = df.groupby("Platform")[["Likes","Shares","Comments"]].sum()
+
+grouped.plot(kind="bar")
+plt.title("Social Media Engagement")
+plt.show()
+
+# total engagement split by platform
+platform_totals = grouped.sum(axis=1)
+
+plt.figure()
+platform_totals.plot(
+    kind="pie",
+    autopct="%1.1f%%",
+    ylabel="",
+    title="Platform Share of Total Engagement",
+)
+plt.show()

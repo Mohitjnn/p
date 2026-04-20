@@ -1,0 +1,78 @@
+
+
+
+
+
+
+import requests
+import time
+
+url = "http://quotes.toscrape.com"
+
+request_times = []
+is_bot_behavior = True
+
+print("Sending requests to:", url)
+
+start_total = time.time()
+
+for i in range(10):
+    start = time.time()
+
+    requests.get(url)
+
+    end = time.time()
+    request_times.append(end - start)
+
+    if is_bot_behavior:
+        time.sleep(0)   # bot: no delay
+    else:
+        time.sleep(1)   # human: delay
+
+end_total = time.time()
+
+# Metrics
+avg_request_time = sum(request_times) / len(request_times)
+total_time = end_total - start_total
+
+if is_bot_behavior:
+    result = "Bot Detected"
+else:
+    result = "Human User Detected"
+
+print("Average Request Time:", avg_request_time)
+print("Total Time:", total_time)
+print("Result:", result)
+
+
+
+# import requests, time
+
+# url = "http://quotes.toscrape.com"
+# request_times = []
+
+# start_total = time.time()
+
+# for i in range(10):
+#     start = time.time()
+#     requests.get(url)
+#     end = time.time()
+
+#     request_times.append(end - start)
+#     time.sleep(0.2)  # simulate user (change/remove to test)
+
+# end_total = time.time()
+
+# # --- Bot Detection Logic ---
+# avg = sum(request_times) / len(request_times)
+# variation = max(request_times) - min(request_times)
+
+# # conditions: very fast + very consistent
+# is_bot_behavior = avg < 0.3 and variation < 0.05
+
+# # --- Result ---
+# result = "Bot Detected" if is_bot_behavior else "Human User Detected"
+
+# print("Avg:", avg)
+# print("Variation:", variation)
+# print("Result:", result)
